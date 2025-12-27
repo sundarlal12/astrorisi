@@ -1,0 +1,84 @@
+.lj-why {
+  padding: 100px 40px;
+  background:
+    radial-gradient(circle at center, rgba(255, 213, 106, 0.15), transparent 45%),
+    linear-gradient(180deg, #2b0b0b, #140505);
+}
+
+.lj-why-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* IMAGE */
+.lj-why-image img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 22px;
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.6);
+}
+
+/* CONTENT */
+.lj-why-label {
+  display: inline-block;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #ffd56a;
+  margin-bottom: 14px;
+}
+
+.lj-why-content h2 {
+  font-size: 44px;
+  font-weight: 800;
+  color: #ffe6a6;
+  margin-bottom: 26px;
+}
+
+.lj-why-points {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 26px;
+}
+
+.lj-why-points li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #f0ddb0;
+  margin-bottom: 14px;
+}
+
+.lj-why-points .check {
+  color: #ffd56a;
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+.lj-why-footer {
+  font-size: 15px;
+  color: #e6cf9a;
+  line-height: 1.8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .lj-why-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .lj-why-image img {
+    margin: 0 auto;
+  }
+
+  .lj-why-points li {
+    justify-content: center;
+    text-align: left;
+  }
+}

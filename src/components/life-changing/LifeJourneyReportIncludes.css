@@ -1,0 +1,98 @@
+.lj-report {
+  padding: 120px 40px;
+  background: radial-gradient(
+      circle at top,
+      rgba(255, 213, 106, 0.08),
+      transparent 55%
+    ),
+    linear-gradient(180deg, #05070f, #02030a);
+  color: #fff4d6;
+}
+
+.lj-report-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 70px;
+}
+
+/* GRID */
+.lj-report-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* CARD */
+.lj-report-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 28px 26px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #0b0d18, #05060d);
+  border: 1px solid rgba(255, 213, 106, 0.25);
+  box-shadow: inset 0 0 0 1px rgba(255, 213, 106, 0.08);
+}
+
+/* NUMBER */
+.lj-report-index {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #ffd56a, #f3b942);
+  color: #2b1c00;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+/* TEXT */
+.lj-report-text {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* SHOW MORE */
+.lj-report-action {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.lj-show-more {
+  background: transparent;
+  color: #ffd56a;
+  border: 2px solid #ffd56a;
+  padding: 14px 36px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lj-show-more:hover {
+  background: rgba(255, 213, 106, 0.12);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .lj-report-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .lj-report-title {
+    font-size: 34px;
+  }
+
+  .lj-report-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,302 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  background: #FFFFFF;
+  border-radius: 24px;
+  padding: 48px 40px;
+  max-width: 520px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.modal-close:hover {
+  background: #F5F5F5;
+}
+
+.modal-close svg {
+  stroke: #666666;
+}
+
+.modal-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.modal-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1A1A1A;
+  margin: 0 0 12px;
+}
+
+.modal-header p {
+  font-size: 16px;
+  color: #888888;
+  margin: 0;
+  font-weight: 400;
+}
+
+.modal-tabs {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+  background: #F5F5F5;
+  padding: 6px;
+  border-radius: 12px;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 14px 24px;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #666666;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+  background: #FFFFFF;
+  color: #E74C3C;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.input-group {
+  width: 100%;
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+  border: 2px solid #E0E0E0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #FFFFFF;
+  transition: all 0.3s ease;
+}
+
+.phone-input:focus-within {
+  border-color: #E74C3C;
+  box-shadow: 0 0 0 4px rgba(231, 76, 60, 0.1);
+}
+
+.country-code {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 16px 12px;
+  background: #F9F9F9;
+  border-right: 2px solid #E0E0E0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.country-code .flag {
+  font-size: 20px;
+}
+
+.country-code .code {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1A1A1A;
+}
+
+.country-code svg {
+  stroke: #666666;
+  margin-left: 4px;
+}
+
+.phone-input input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 16px 16px;
+  font-size: 16px;
+  color: #1A1A1A;
+  background: transparent;
+}
+
+.phone-input input::placeholder {
+  color: #AAAAAA;
+}
+
+.email-input {
+  width: 100%;
+  padding: 16px;
+  border: 2px solid #E0E0E0;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.email-input:focus {
+  border-color: #E74C3C;
+  box-shadow: 0 0 0 4px rgba(231, 76, 60, 0.1);
+}
+
+.email-input::placeholder {
+  color: #AAAAAA;
+}
+
+.otp-btn {
+  width: 100%;
+  padding: 18px;
+  background: #E74C3C;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.otp-btn:hover {
+  background: #D13527;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(231, 76, 60, 0.3);
+}
+
+.otp-btn:active {
+  transform: translateY(0);
+}
+
+.terms-text {
+  text-align: center;
+  font-size: 14px;
+  color: #666666;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.terms-link {
+  color: #3B82F6;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.terms-link:hover {
+  color: #2563EB;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 36px 28px;
+    max-width: 100%;
+  }
+
+  .modal-header h2 {
+    font-size: 28px;
+  }
+
+  .modal-header p {
+    font-size: 14px;
+  }
+
+  .tab-btn {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+
+  .phone-input input,
+  .email-input {
+    font-size: 14px;
+  }
+
+  .otp-btn {
+    padding: 16px;
+    font-size: 16px;
+  }
+
+  .terms-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 28px 20px;
+  }
+
+  .modal-header h2 {
+    font-size: 24px;
+  }
+
+  .modal-header p {
+    font-size: 13px;
+  }
+
+  .modal-tabs {
+    gap: 8px;
+  }
+
+  .tab-btn {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+}

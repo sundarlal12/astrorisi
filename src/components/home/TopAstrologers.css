@@ -1,0 +1,202 @@
+.top-astro-section {
+  padding: 20px 15px;
+  background: #fff9f2;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.section-title span {
+  color: #d4a017;
+}
+
+/* CARD */
+.astro-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.astro-header {
+  background: #fff6b0;
+  padding: 12px;
+  position: relative;
+}
+
+.live-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #e53935;
+  color: #fff;
+  padding: 1px 6px;
+  font-size: 9px;
+  font-weight: 600;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.astro-img-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.astro-img-wrapper img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #fff;
+}
+
+.astro-body {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Changed from centered to left-aligned */
+.astro-body h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  text-align: left; /* Changed from center to left */
+}
+
+.rating-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.stars {
+  color: #f6b100;
+}
+
+.exp {
+  color: #6b7280;
+  font-weight: 600;
+}
+
+/* Changed from centered to left-aligned */
+.astro-body p {
+  font-size: 13px;
+  margin: 2px 0;
+  text-align: left; /* Changed from center to left */
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #9ca3af;
+  font-size: 13px;
+  margin-right: 4px;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #c62828;
+}
+
+.book-btn {
+  background: #c62828;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* SWIPER FIX */
+.astro-swiper {
+  padding-bottom: 20px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #c62828;
+}
+
+.swiper-pagination-bullet-active {
+  background: #c62828;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .astro-body h3 {
+    font-size: 14px;
+  }
+
+  .price {
+    font-size: 14px;
+  }
+
+  .old-price {
+    font-size: 12px;
+  }
+
+  .book-btn {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .astro-card {
+    flex-direction: column;
+  }
+
+  .live-badge {
+    font-size: 10px;
+    padding: 3px 10px;
+    top: 6px;
+    left: -15px;
+  }
+
+  .astro-img-wrapper img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .astro-body h3 {
+    font-size: 13px;
+    text-align: left; /* Added to ensure left alignment on mobile */
+  }
+
+  /* Added for mobile responsiveness */
+  .astro-body p {
+    text-align: left; /* Ensure left alignment on mobile */
+  }
+
+  .price {
+    font-size: 13px;
+  }
+
+  .old-price {
+    font-size: 11px;
+  }
+
+  .book-btn {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+}

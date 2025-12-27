@@ -1,0 +1,95 @@
+.hero-carousel {
+  margin-top: 80px;
+}
+
+.hero-slide {
+  min-height: 480px;
+  background: radial-gradient(
+      circle at 70% 50%,
+      rgba(255, 255, 255, 0.08),
+      transparent 40%
+    ),
+    linear-gradient(90deg, #8c1414, #b32020);
+  display: flex;
+  align-items: center;
+  padding: 60px 100px;
+  gap: 80px;
+}
+
+.hero-left img {
+  width: 300px;
+  border-radius: 14px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+}
+
+.hero-right {
+  color: #fff;
+  max-width: 620px;
+}
+
+.hero-tags {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.tag {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.tag.bestseller {
+  background: #f5a623;
+  color: #000;
+}
+
+.tag.category {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.hero-right h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  font-size: 18px;
+  opacity: 0.95;
+  margin-bottom: 22px;
+}
+
+.rating-row {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.cta-btn {
+  padding: 14px 34px;
+  background: #fff;
+  color: #7d1f1f;
+  border: none;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+}

@@ -1,0 +1,484 @@
+.consultation-page {
+  margin-top: 88px;
+  min-height: calc(100vh - 88px);
+  padding: 40px 0 80px;
+  background: #F8F4F0;
+}
+
+.filter-section {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 32px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.filter-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1A1A1A;
+  margin: 0;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #F8F4F0;
+  border-radius: 8px;
+  overflow: hidden;
+  min-width: 320px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 14px 16px;
+  border: none;
+  background: transparent;
+  font-size: 15px;
+  color: #1A1A1A;
+  outline: none;
+}
+
+.search-box input::placeholder {
+  color: #888888;
+}
+
+.search-btn {
+  padding: 12px 16px;
+  background: #0FA4AF;
+  color: #FFFFFF;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-btn:hover {
+  background: #0D8F99;
+}
+
+.filter-divider {
+  height: 1px;
+  background: #E8E8E8;
+  margin: 24px 0;
+}
+
+.category-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1A1A1A;
+}
+
+.clear-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #B8382B;
+  font-size: 14px;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.3s ease;
+}
+
+.clear-btn:hover {
+  opacity: 0.8;
+}
+
+.category-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.category-pill {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 1px solid #E0E0E0;
+  background: #FFFFFF;
+  color: #1A1A1A;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-pill:hover {
+  border-color: #B8382B;
+  color: #B8382B;
+}
+
+.category-pill.active {
+  background: #B8382B;
+  border-color: #B8382B;
+  color: #FFFFFF;
+}
+
+.consultants-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+
+.consultant-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: cardFadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) backwards;
+}
+
+.consultant-card:nth-child(1) { animation-delay: 0.05s; }
+.consultant-card:nth-child(2) { animation-delay: 0.1s; }
+.consultant-card:nth-child(3) { animation-delay: 0.15s; }
+.consultant-card:nth-child(4) { animation-delay: 0.2s; }
+.consultant-card:nth-child(5) { animation-delay: 0.25s; }
+.consultant-card:nth-child(6) { animation-delay: 0.3s; }
+.consultant-card:nth-child(7) { animation-delay: 0.35s; }
+.consultant-card:nth-child(8) { animation-delay: 0.4s; }
+.consultant-card:nth-child(9) { animation-delay: 0.45s; }
+.consultant-card:nth-child(10) { animation-delay: 0.5s; }
+
+@keyframes cardFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.consultant-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+.consultant-image-wrapper {
+  position: relative;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.live-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #B8382B;
+  color: #FFFFFF;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.live-dot {
+  width: 8px;
+  height: 8px;
+  background: #4CAF50;
+  border-radius: 50%;
+  animation: livePulse 1.5s ease-in-out infinite;
+}
+
+@keyframes livePulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.2);
+  }
+}
+
+.consultant-image {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(180deg, #FFE5A0 0%, #F5D78E 100%);
+  padding: 4px;
+  transition: transform 0.3s ease;
+}
+
+.consultant-card:hover .consultant-image {
+  transform: scale(1.05);
+}
+
+.consultant-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.consultant-info {
+  padding: 0 20px 20px;
+}
+
+.consultant-name {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1A1A1A;
+  margin: 0 0 10px;
+}
+
+.consultant-meta {
+  margin-bottom: 12px;
+}
+
+.rating-exp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rating {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  color: #E0E0E0;
+  font-size: 14px;
+}
+
+.star.filled {
+  color: #F5A623;
+}
+
+.experience {
+  font-size: 13px;
+  color: #666666;
+}
+
+.consultant-details {
+  margin-bottom: 16px;
+}
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #666666;
+  margin-bottom: 6px;
+}
+
+.detail-row svg {
+  stroke: #888888;
+  flex-shrink: 0;
+}
+
+.consultant-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.price-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.original-price {
+  font-size: 13px;
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.current-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #B8382B;
+}
+
+.book-btn {
+  padding: 10px 20px;
+  background: #B8382B;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.book-btn:hover {
+  background: #9A2E24;
+  transform: translateY(-2px);
+}
+
+.no-results {
+  text-align: center;
+  padding: 80px 20px;
+  background: #FFFFFF;
+  border-radius: 16px;
+}
+
+.no-results p {
+  font-size: 18px;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+.no-results button {
+  padding: 12px 32px;
+  background: #B8382B;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.no-results button:hover {
+  background: #9A2E24;
+}
+
+@media (max-width: 1400px) {
+  .consultants-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1100px) {
+  .consultants-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .consultants-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .filter-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .search-box {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .consultation-page {
+    margin-top: 72px;
+    padding: 24px 0 60px;
+  }
+
+  .filter-section {
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+  }
+
+  .filter-header h1 {
+    font-size: 22px;
+  }
+
+  .category-pills {
+    gap: 8px;
+  }
+
+  .category-pill {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .consultants-grid {
+    gap: 16px;
+  }
+
+  .consultant-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .consultant-name {
+    font-size: 15px;
+  }
+
+  .consultant-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .book-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .consultants-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .consultant-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+
+  .consultant-image-wrapper {
+    padding: 16px;
+  }
+
+  .consultant-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .consultant-info {
+    padding: 16px;
+    padding-left: 0;
+  }
+
+  .live-badge {
+    top: 8px;
+    right: auto;
+    left: 8px;
+    padding: 4px 10px;
+    font-size: 11px;
+  }
+}
