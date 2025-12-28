@@ -133,19 +133,20 @@ const OtherServices = () => {
       cta: "Don't miss this opportunity to transform your journey.",
       buttonText: 'Get Your Report',
       path: '/reports',
-    },
-       {
-      image:
-    '/src/assets/gems.png',
-      title: 'Our Commitment to',
-      titleAccent: 'Purity',
-      titleEnd: '',
-      description:
-        'Unlock the secrets of your future, gain deep insights into your health, and receive powerful, personalized remedies. We are committed to offering products that are 100% pure, natural, and ethically sourced. Every item is carefully selected, energetically cleansed, and tested for authenticity before it reaches you.',
-      cta: '',
-      buttonText: 'Shop Now',
-      path: '/shop',
     }
+    // ,
+    //    {
+    //   image:
+    // '/src/assets/gems.png',
+    //   title: 'Our Commitment to',
+    //   titleAccent: 'Purity',
+    //   titleEnd: '',
+    //   description:
+    //     'Unlock the secrets of your future, gain deep insights into your health, and receive powerful, personalized remedies. We are committed to offering products that are 100% pure, natural, and ethically sourced. Every item is carefully selected, energetically cleansed, and tested for authenticity before it reaches you.',
+    //   cta: '',
+    //   buttonText: 'Shop Now',
+    //   path: '/shop',
+    // }
   ];
 
   return (
