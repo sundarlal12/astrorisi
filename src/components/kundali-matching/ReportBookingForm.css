@@ -638,3 +638,196 @@
   color: #ffffff; /* WHITE */
   margin: 28px 0 14px;
 }
+
+
+
+/* Toast Notification Styles */
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10000;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.toast-notification {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-radius: 8px;
+  color: white;
+  min-width: 300px;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 10px;
+}
+
+.toast-success {
+  background: linear-gradient(135deg, #2d9d78 0%, #1e7c5a 100%);
+  border-left: 4px solid #1e7c5a;
+}
+
+.toast-error {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  border-left: 4px solid #c0392b;
+}
+
+.toast-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.toast-content svg {
+  flex-shrink: 0;
+}
+
+.toast-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.toast-close:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Compact Thank You Message */
+.thank-you-compact {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.success-icon-small {
+  margin-bottom: 10px;
+}
+
+.thank-you-title-small {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2D9D78;
+  margin: 0;
+}
+
+.thank-you-subtitle-small {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  line-height: 1.4;
+  max-width: 300px;
+}
+
+.compact-details {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 16px;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+}
+
+.detail-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.detail-line:last-child {
+  border-bottom: none;
+}
+
+.id-text {
+  font-family: 'Courier New', monospace;
+  color: #7D1F1F;
+  font-weight: 600;
+  font-size: 13px;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.delivery-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #666;
+  background: #fff9e6;
+  padding: 12px 16px;
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+.close-btn-small {
+  background: linear-gradient(135deg, #7D1F1F 0%, #5C1616 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.close-btn-small:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(125, 31, 31, 0.3);
+}
+
+/* Responsive styles for thank you message */
+@media (max-width: 768px) {
+  .thank-you-compact {
+    padding: 20px;
+    gap: 16px;
+  }
+  
+  .compact-details {
+    font-size: 13px;
+  }
+  
+  .id-text {
+    max-width: 120px;
+  }
+  
+  .toast-notification {
+    min-width: 280px;
+    padding: 14px 16px;
+  }
+}
