@@ -59,7 +59,7 @@ export const plans = [
     title: "Love Report",
     description: "Understand Your Emotions, Attraction & Love Patterns",
     originalPrice: "₹999",
-    price: "₹393",
+    price: "1",
     features: [
       "In-depth analysis of your emotional nature and romantic energy",
       "Insights into Venus and Mars placements and their role in love",
