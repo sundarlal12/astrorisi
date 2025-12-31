@@ -688,7 +688,7 @@ html, body {
 } */
 
 
-.swiper-container,
+ /* .swiper-container,
 .swiper-wrapper,
 .swiper-slide,
 .swiper {
@@ -696,12 +696,29 @@ html, body {
   transform-style: flat !important;
   backface-visibility: hidden !important;
   -webkit-backface-visibility: hidden !important;
-}
+}  */
 
+/* In ReportsTopSlider.css - Make it specific */
+.reports-top-slider .swiper,
+.reports-top-slider .swiper-wrapper,
+.reports-top-slider .swiper-slide,
+.reports-top-slider .swiper-container {
+  overflow: hidden !important; /* Changed from visible to hidden */
+  transform-style: flat !important;
+  backface-visibility: hidden !important;
+  -webkit-backface-visibility: hidden !important;
+  max-width: 100vw !important;
+   overflow: visible !important;
+  transform-style: flat !important;
+  backface-visibility: hidden !important;
+  -webkit-backface-visibility: hidden !important;
+}
+ 
+/* 
 ::-webkit-scrollbar:horizontal {
   display: none !important;
   height: 0 !important;
-}
+} 
 
 /* 
 img, video, iframe, canvas, svg {
