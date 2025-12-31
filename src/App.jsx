@@ -61,7 +61,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
-        <Marquee />
+        {/* <Marquee /> */}
       </div>
     </Router>
   );

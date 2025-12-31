@@ -11,7 +11,7 @@ import ChooseYourPlan, { plans } from "../components/life-journey/ChooseYourPlan
 
 import LifeJourneyBenefits from "../components/life-journey/LifeJourneyBenefits";
 import LifeJourneyWhySpecial from "../components/life-journey/LifeJourneyWhySpecial";
-
+import Marquee from '../components/layout/MarqueeJourney';
 const lifeJourneyWhySpecialData = {
   label: "THIS REPORT CAN BE LIFE-JOURNEY FOR YOU",
   title: "Here is Why It’s So Special",
@@ -336,6 +336,7 @@ const LifeJourneyReportPage = () => {
       <LifeJourneyFAQ {...lifeJourneyFAQData} />
  
       {/* <LifeJourneyCTA /> */}
+      <Marquee />
     </div>
   );
 };

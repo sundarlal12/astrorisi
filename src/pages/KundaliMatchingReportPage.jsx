@@ -9,6 +9,8 @@ import LifeJourneyCTA from "../components/kundali-matching/LifeJourneyCTA";
 import LifeJourneyReportIncludes from "../components/kundali-matching/LifeJourneyReportIncludes";
 import ChooseYourPlan, { plans } from "../components/kundali-matching/ChooseYourPlan";
 
+import Marquee from '../components/layout/MarqueeKundli';
+
 import LifeJourneyBenefits from "../components/kundali-matching/LifeJourneyBenefits";
 import LifeJourneyWhySpecial from "../components/kundali-matching/LifeJourneyWhySpecial";
 const lifeJourneyWhySpecialData = {
@@ -416,6 +418,7 @@ const LifeChangingReportPage = () => {
       <LifeJourneyFAQ {...lifeJourneyFAQData} />
  
       {/* <LifeJourneyCTA /> */}
+      <Marquee />
     </div>
   );
 };

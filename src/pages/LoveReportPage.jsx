@@ -8,7 +8,7 @@ import LifeJourneyFAQ from "../components/love-report/LifeJourneyFAQ";
 import LifeJourneyCTA from "../components/love-report/LifeJourneyCTA";
 import LifeJourneyReportIncludes from "../components/love-report/LifeJourneyReportIncludes";
 import ChooseYourPlan, { plans } from "../components/love-report/ChooseYourPlan";
-
+import Marquee from '../components/layout/Marquee';
 import LifeJourneyBenefits from "../components/love-report/LifeJourneyBenefits";
 import LifeJourneyWhySpecial from "../components/love-report/LifeJourneyWhySpecial";
 
@@ -407,6 +407,7 @@ items={[
       <LifeJourneyFAQ {...lifeJourneyFAQData} />
  
       {/* <LifeJourneyCTA /> */}
+      <Marquee />
     </div>
   );
 };

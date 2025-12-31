@@ -28,14 +28,14 @@
 //       <div className="marquee-inner">
 //         {/* PRICE */}
 //         <div className="marquee-price">
-//           <span className="old-price">₹999</span>
-//           <span className="new-price">₹393</span>
+//           <span className="old-price">₹1996</span>
+//           <span className="new-price">₹699</span>
 //         </div>
 
 //         {/* CTA */}
 //         <button
 //           className="marquee-btn"
-//           onClick={() => navigate("/love-report#choose-plan")}
+//           onClick={() => navigate("/life-changing-report#choose-plan")}
 //         >
 //           GET YOUR REPORT NOW
 //         </button>
@@ -53,7 +53,6 @@
 // };
 
 // export default Marquee;
-
 
 
 
@@ -86,7 +85,7 @@ const Marquee = () => {
 
   const scrollToChoosePlan = () => {
     // First, check if we're already on the right page
-    if (location.pathname === "/love-report") {
+    if (location.pathname === "/life-changing-report") {
       // Find the "choose-plan" section
       const choosePlanSection = document.getElementById("choose-plan");
       if (choosePlanSection) {
@@ -100,7 +99,7 @@ const Marquee = () => {
       }
     } else {
       // Navigate to the page with hash
-      navigate("/v#choose-plan");
+      navigate("/life-changing-report#choose-plan");
     }
   };
 
@@ -124,8 +123,8 @@ const Marquee = () => {
       <div className="marquee-inner">
         {/* PRICE */}
         <div className="marquee-price">
-          <span className="old-price">₹999</span>
-          <span className="new-price">₹393</span>
+          <span className="old-price">₹1996</span>
+          <span className="new-price">₹699</span>
         </div>
 
         {/* CTA */}
@@ -149,3 +148,4 @@ const Marquee = () => {
 };
 
 export default Marquee;
+

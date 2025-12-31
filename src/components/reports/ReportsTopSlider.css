@@ -667,3 +667,44 @@
 
 
 
+
+
+
+
+/* * {
+  max-width: 100vw !important;
+  box-sizing: border-box !important;
+}
+
+html, body {
+  overflow-x: hidden !important;
+  width: 100% !important;
+  position: relative !important;
+}
+
+#root {
+  overflow: hidden !important;
+  width: 100% !important;
+} */
+
+
+.swiper-container,
+.swiper-wrapper,
+.swiper-slide,
+.swiper {
+  overflow: visible !important;
+  transform-style: flat !important;
+  backface-visibility: hidden !important;
+  -webkit-backface-visibility: hidden !important;
+}
+
+::-webkit-scrollbar:horizontal {
+  display: none !important;
+  height: 0 !important;
+}
+
+/* 
+img, video, iframe, canvas, svg {
+  max-width: 100% !important;
+  height: auto !important;
+} */
