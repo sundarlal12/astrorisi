@@ -2197,7 +2197,7 @@ const ReportBookingForm = ({ selectedPlan, onClose }) => {
           <div className="booking-plan-display">
             <div className="plan-display-card">
               <div className="plan-display-image">
-                <img src="/src/assets/kundli-match-report2.jpg" alt={selectedPlan.title} />
+                <img src="/src/assets/varshphal-report.jpeg" alt={selectedPlan.title} />
               </div>
 
               <div className="plan-display-details">
