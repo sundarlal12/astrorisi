@@ -11,6 +11,7 @@ import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import BookPujaPage from './pages/BookPujaPage';
 import LifeJourneyReportPage from './pages/LifeJourneyReportPage';
+import VarshphalReport from './pages/VarshphalReport';
 import './App.css';
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions";
@@ -40,6 +41,9 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/book-puja" element={<BookPujaPage />} />
+              <Route path="/varshphal-report" element={<VarshphalReport />} />
+
+
 
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
