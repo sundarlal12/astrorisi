@@ -59,6 +59,16 @@ const reports = [
     category: "Relationships",
     path: "/love-report",
    },
+   {
+    title: "Varshphal Report",
+    desc: "Numerological analysis of your Year",
+    rating: 4.9,
+    reviews: 1500,
+    price: 249,
+    image: LoverReportImg,
+    category: "Transformation",
+    path: "/varshphal-report",
+   },
   // {
   //   title: "Navratri Report",
   //   desc: "Special Navratri guidance & spiritual remedies",
