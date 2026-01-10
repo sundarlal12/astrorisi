@@ -14,6 +14,8 @@ import lifeJourneyImg from "../assets/life-journey-report.jpg";
 import lifeChangingImg from "../assets/life-changing-report.jpg";
 import kundaliMatchingImg from "../assets/kundli-match-report1.jpg";
 import LoverReportImg from "../assets/love-report.jpg";
+import VarshPhalReportImg from "../assets/varshphal-report.jpeg";
+
 
  
 
@@ -65,7 +67,7 @@ const reports = [
     rating: 4.9,
     reviews: 1500,
     price: 249,
-    image: LoverReportImg,
+    image: VarshPhalReportImg,
     category: "Transformation",
     path: "/varshphal-report",
    },
