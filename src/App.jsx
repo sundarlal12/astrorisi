@@ -20,6 +20,11 @@ import TermsConditions from "./pages/TermsConditions";
 import LifeChangingReportPage from "./pages/LifeChangingReportPage";
  import KundaliMatchingReportPage from "./pages/KundaliMatchingReportPage";
  import LoveReportPage from "./pages/LoveReportPage";
+import Premiumlifepath from "./pages/LifeChangingReportPage";
+
+ //import LoveReportPage from "./pages/LoveReportPage";
+
+
 // import NavratriReportPage from "./pages/NavratriReportPage";
 // import NameNumberReportPage from "./pages/NameNumberReportPage";
 // import VarshphalReportPage from "./pages/VarshphalReportPage";
@@ -37,6 +42,13 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/consultation" element={<ConsultationPage />} />
             <Route path="/reports" element={<ReportsPage />} />
+
+            
+
+            <Route path="/premium-life-path" element={<Premiumlifepath />} />
+            <Route path="/love-compatibility-report" element={<LoveReportPage />} />
+
+
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
