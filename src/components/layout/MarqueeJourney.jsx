@@ -121,8 +121,8 @@ const Marquee = () => {
       <div className="marquee-inner">
         {/* PRICE */}
         <div className="marquee-price">
-          <span className="old-price">₹1996</span>
-          <span className="new-price">₹996</span>
+          <span className="old-price">₹996</span>
+          <span className="new-price">499</span>
         </div>
 
         {/* CTA */}
