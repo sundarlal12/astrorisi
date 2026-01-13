@@ -57,8 +57,8 @@ export const plans = [
     badge: "FLAT 50% OFF",
     title: "Life Changing Report",
     description: "Your Personalized Roadmap to Life's Big Questions",
-    originalPrice: "₹1996",
-    price: "₹699",
+    originalPrice: "₹999",
+    price: "₹499",
     features: [
       "Detailed analysis of your life using Astrology",
       "Insights on career, love, health & wealth",

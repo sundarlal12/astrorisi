@@ -175,7 +175,7 @@ const heroData = {
   cta: {
     text: "Get My Report Today",
     oldPrice: "₹1996",
-    newPrice: "₹999"
+    newPrice: "₹499"
   },
 
   stats: [
