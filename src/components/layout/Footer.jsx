@@ -39,6 +39,11 @@ const Footer = () => {
                 </a>
                 <a href="mailto:info@astrorisi.in">info@astrorisi.in</a>
               </div>
+              <div className="footer-social">
+  <a href="https://www.facebook.com/profile.php?id=61584687812602" target="_blank" rel="noopener noreferrer">Facebook</a>
+  <a href="https://www.instagram.com/astrorisi" target="_blank" rel="noopener noreferrer">Instagram</a>
+</div>
+
             </div>
 
             <div className="footer-col">
@@ -60,6 +65,19 @@ const Footer = () => {
                 {/* <li><Link to="/book-puja">Book Puja</Link></li> */}
               </ul>
             </div>
+
+            <div className="footer-col">
+  <h4>Astrology Reports</h4>
+  <ul>
+    <li><Link to="/life-journey-report">Life Journey Report</Link></li>
+    <li><Link to="/life-changing-report">Life Changing Report</Link></li>
+    <li><Link to="/premium-life-path">Premium Life Path Report</Link></li>
+    <li><Link to="/kundali-matching-report">Kundali Matching Report</Link></li>
+    <li><Link to="/love-report">Love Compatibility Report</Link></li>
+    <li><Link to="/varshphal-report">Varshphal Report</Link></li>
+  </ul>
+</div>
+
 
             <div className="footer-col">
               <h4>Company</h4>

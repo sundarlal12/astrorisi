@@ -36,7 +36,7 @@ const Header = () => {
         <div className="header-content">
           <Link to="/" className="logo">
             <div className="logo-box">
-              <img src={logoImage} alt="AstroRisi" className="logo-image" />
+              <img src={logoImage}  alt="Astrorisi – Astrology & Numerology Services" className="logo-image" />
             </div>
             <div className="logo-text">
               <span className="logo-brand">AstroRisi</span>
