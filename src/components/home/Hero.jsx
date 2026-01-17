@@ -157,7 +157,7 @@ const Hero = () => {
             <img
               key={index}
               src={slide.image}
-              alt="AstroRisi Services"
+             alt="Astrorisi – Astrology & Numerology Services"
               className={`hero-slide ${
                 index === currentSlide ? 'active' : ''
               }`}
